@@ -1,0 +1,120 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ABANDON	command.h	13;"	d
+BACKLOG	socketHandler.cpp	12;"	d	file:
+BROEND	command.h	12;"	d
+BROSCORE	command.h	11;"	d
+CLIENT_H	client.h	2;"	d
+CLog	log.cpp	/^CLog::CLog() {$/;"	f	class:CLog
+CLog	log.cpp	/^CLog::CLog(const char * filename) {$/;"	f	class:CLog
+CLog	log.h	/^class CLog {$/;"	c
+DEALCARD	command.h	10;"	d
+ERROR	log.h	/^      ERROR, SERVER, POT, HAND, VERBOSE$/;"	e	enum:LOGLEVEL
+HAND	log.h	/^      ERROR, SERVER, POT, HAND, VERBOSE$/;"	e	enum:LOGLEVEL
+HANDEND	command.h	15;"	d
+LOGLEVEL	log.h	/^enum LOGLEVEL {$/;"	g
+NAME	command.h	14;"	d
+PACK_H	pack.h	2;"	d
+POT	log.h	/^      ERROR, SERVER, POT, HAND, VERBOSE$/;"	e	enum:LOGLEVEL
+SERVER	log.h	/^      ERROR, SERVER, POT, HAND, VERBOSE$/;"	e	enum:LOGLEVEL
+VERBOSE	log.h	/^      ERROR, SERVER, POT, HAND, VERBOSE$/;"	e	enum:LOGLEVEL
+_COMMAND_H	command.h	9;"	d
+_logLevel	log.h	/^   LOGLEVEL _logLevel;$/;"	m	class:CLog
+actionAccepted	client.h	/^   virtual void actionAccepted() {};$/;"	f	class:client
+actionNotAllowed	client.h	/^   virtual void actionNotAllowed() {};$/;"	f	class:client
+actionUnknown	client.h	/^   virtual void actionUnknown() {};$/;"	f	class:client
+broadcast	server.cpp	/^int server::broadcast(unsigned char *msg, int msg_len) {$/;"	f	class:server
+broadcastScore	server.cpp	/^void broadcastScore()$/;"	f
+calResult	server.cpp	/^void calResult(vector<int>& playerLive)$/;"	f
+calTableScore	server.cpp	/^void server::calTableScore(vector<int> &cards)$/;"	f	class:server
+cards	deckC.h	/^   int8_t cards[52];$/;"	m	class:deckC
+cardsLeft	deckC.h	/^   int cardsLeft;$/;"	m	class:deckC
+cleanup	socketHandler.cpp	/^int cleanup(int *fd) {$/;"	f
+clear	server.cpp	/^int server::clear(int8_t n) {$/;"	f	class:server
+client	client.cpp	/^client::client(const char *_name) {$/;"	f	class:client
+client	client.h	/^class client {$/;"	c
+connectToServer	client.cpp	/^int client::connectToServer(const char *remoteHost, const char *port) {$/;"	f	class:client
+dealCards	server.cpp	/^int server::dealCards(deckC& deck,vector<int> playerLive)$/;"	f	class:server
+deckC	deckC.cpp	/^deckC::deckC() {$/;"	f	class:deckC
+deckC	deckC.h	/^class deckC {$/;"	c
+displayMessages	log.h	/^   bool displayMessages;$/;"	m	class:CLog
+dummyClient	dummyClient.cpp	/^   dummyClient(const char *name) : client(name) {};$/;"	f	class:dummyClient
+dummyClient	dummyClient.cpp	/^class dummyClient : public client {$/;"	c	file:
+fd	seat.h	/^    int fd;$/;"	m	class:seat
+file	log.h	/^   FILE * file;$/;"	m	class:CLog
+gameLoop	client.cpp	/^int client::gameLoop() {$/;"	f	class:client
+gameLoop	server.cpp	/^int server::gameLoop() {$/;"	f	class:server
+getCard	deckC.cpp	/^int8_t deckC::getCard() {$/;"	f	class:deckC
+getDate	log.cpp	/^const string CLog::getDate() {$/;"	f	class:CLog
+getFD	seat.h	/^    int getFD() { return fd; };$/;"	f	class:seat
+getHandCards	seat.h	/^    vector<int>& getHandCards(){return handCards;};$/;"	f	class:seat
+getHandNum	seat.h	/^    int getHandNum(){return handCards.size();}$/;"	f	class:seat
+getLeftCardNum	deckC.h	/^   int getLeftCardNum(){return cardsLeft;}$/;"	f	class:deckC
+getName	seat.h	/^    unsigned char* getName() { return name; };$/;"	f	class:seat
+getNumber	seat.h	/^    int8_t getNumber() { return seatNumber; };$/;"	f	class:seat
+getRemainingChips	seat.h	/^    int getRemainingChips() { return remainingChips; };$/;"	f	class:seat
+getTime	log.cpp	/^const string CLog::getTime() {$/;"	f	class:CLog
+get_in_addr	socketHandler.cpp	/^void *get_in_addr(struct sockaddr *sa) {$/;"	f
+handCardNum	server.h	/^    int handCardNum; $/;"	m	class:server
+handCards	seat.h	/^    map<int,int> handCards;$/;"	m	class:seat
+lastPlayer	server.h	/^    int lastPlayer; $/;"	m	class:server
+log	log.cpp	/^void CLog::log(LOGLEVEL logLevel, const char *msg, ...)$/;"	f	class:CLog
+log	log.cpp	/^void CLog::log(LOGLEVEL logLevel, vector<int>cards,const char *msg, ...)$/;"	f	class:CLog
+log	server.h	/^    CLog log;$/;"	m	class:server
+main	dummyClient.cpp	/^int main(int argc, char *argv[]) {$/;"	f
+name	client.h	/^   const char *name;$/;"	m	class:client
+name	seat.h	/^    unsigned char *name;$/;"	m	class:seat
+newRound	seat.cpp	/^void seat::newRound() {$/;"	f	class:seat
+nextRound	client.h	/^   virtual void nextRound() { ready(); }; \/\/ tell server when you are ready 45s timeout$/;"	f	class:client
+nextRound	dummyClient.cpp	/^void dummyClient::nextRound() {$/;"	f	class:dummyClient
+pack	pack.cpp	/^int8_t pack(unsigned char *buf,int id,std::vector<int>& cards ) {$/;"	f
+packi16	pack.cpp	/^void packi16(unsigned char *buf, unsigned int i) {$/;"	f
+placeBet	dummyClient.cpp	/^void dummyClient::placeBet() {$/;"	f	class:dummyClient
+player	server.h	/^    seat player[8];$/;"	m	class:server
+playerCount	server.h	/^    int playerCount;$/;"	m	class:server
+playerLeft	client.h	/^   virtual void playerLeft(int8_t n) {};$/;"	f	class:client
+playerWon	client.h	/^   virtual void playerWon(int8_t n, int16_t amount) {};$/;"	f	class:client
+playerWon	dummyClient.cpp	/^void dummyClient::playerWon(int8_t n, int16_t amount) {$/;"	f	class:dummyClient
+playerWon	server.cpp	/^int server::playerWon(int8_t n, int16_t amount) {$/;"	f	class:server
+playersLeft	server.h	/^    int playersLeft;$/;"	m	class:server
+port	server.h	/^    const char *port;$/;"	m	class:server
+read	client.cpp	/^int client::read(unsigned char *buf) {$/;"	f	class:client
+readNext	server.cpp	/^int server::readNext(int8_t n,int &id,vector<int>& cards) {$/;"	f	class:server
+ready	client.cpp	/^int client::ready()$/;"	f	class:client
+remainingChips	seat.h	/^    int remainingChips;$/;"	m	class:seat
+score	seat.h	/^    int score;  $/;"	m	class:seat
+seat	seat.cpp	/^seat::seat() {};$/;"	f	class:seat
+seat	seat.cpp	/^seat::seat(int8_t n) {$/;"	f	class:seat
+seat	seat.h	/^class seat {$/;"	c
+seatNumber	seat.h	/^    int8_t seatNumber;$/;"	m	class:seat
+sendAll	client.cpp	/^int client::sendAll(int fd, unsigned char *msg, int msg_len) {$/;"	f	class:client
+sendAll	server.cpp	/^int server::sendAll(int n, unsigned char *msg, int msg_len) {$/;"	f	class:server
+server	server.cpp	/^server::server(const char *port, int playerCount) {$/;"	f	class:server
+server	server.h	/^class server {$/;"	c
+serverId	server.h	/^    int serverId;$/;"	m	class:server
+setDisplayMessages	log.h	/^    void setDisplayMessages(bool b) { displayMessages = b; };$/;"	f	class:CLog
+setFD	seat.h	/^    void setFD(int n) { fd = n; };$/;"	f	class:seat
+setLogLevel	log.h	/^    void setLogLevel(LOGLEVEL logLevel) { _logLevel = logLevel; };$/;"	f	class:CLog
+setName	seat.h	/^    void setName(unsigned char *_name) { name = _name; };$/;"	f	class:seat
+setPlayerName	client.h	/^   virtual void setPlayerName(int8_t n, unsigned char *name) {};$/;"	f	class:client
+setup	socketHandler.cpp	/^int setup(int *client, int playerCount, const char *port) {$/;"	f
+shuffle	deckC.cpp	/^void deckC::shuffle() {$/;"	f	class:deckC
+sigchld_handler	socketHandler.cpp	/^void sigchld_handler(int s) {$/;"	f
+sockfd	client.h	/^   int sockfd;$/;"	m	class:client
+startGame	server.cpp	/^int server::startGame() {$/;"	f	class:server
+state	server.h	/^    STATUS state;$/;"	m	class:server
+tableScore	server.h	/^    int tableScore;$/;"	m	class:server
+unpack	pack.cpp	/^void unpack(unsigned char *buf,int& id,std::vector<int>& cards) {$/;"	f
+unpacki16	pack.cpp	/^unsigned int unpacki16(unsigned char *buf) {$/;"	f
+waitForNextRound	server.cpp	/^int server::waitForNextRound() {$/;"	f	class:server
+waitForPlayers	socketHandler.cpp	/^int waitForPlayers(int sockfd, int *client, int playerCount) {$/;"	f
+wins	seat.cpp	/^void seat:: wins(int n) {$/;"	f	class:seat
+~CLog	log.cpp	/^CLog::~CLog() {$/;"	f	class:CLog
+~client	client.cpp	/^client::~client() {$/;"	f	class:client
+~dummyClient	dummyClient.cpp	/^   ~dummyClient() {};$/;"	f	class:dummyClient
+~seat	seat.cpp	/^seat::~seat() {}$/;"	f	class:seat
+~server	server.cpp	/^server::~server() {$/;"	f	class:server

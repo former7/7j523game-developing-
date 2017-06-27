@@ -1,15 +1,40 @@
-0~12      2 3 4 5 6 7 8 9 10 J Q K A 黑  
-13~25    2 3 4 5 6 7 8 9 10 J Q K A 红  
-26~38    2 3 4 5 6 7 8 9 10 J Q K A 樱  
-39~51    2 3 4 5 6 7 8 9 10 J Q K A 方  
-52~53    小王 大王  
-服务器命令  
-发牌 size 99 0 1 2 3 ...  
-广播牌面 size id 0 1 2 3...  
-广播成绩 size 98 score score score...  
-广播游戏结束 size 97  
-客户端命令：  
-出牌size id 0 1 2 3 ...  
-不出size id 55  
-//名字:size id 56  
-牌出完 size id 57  
+client:                    [action]             [byte]
+   set name                [name]               [*char]              0
+   fold                    -                                         1
+   raise                   [amount]             [short]              2
+   call                    -                                         3
+   check                   -                                         4
+   allin                   -                                         5
+   bail                    -                                         6
+   ready                   -                                         10
+
+server:                    [action]             [byte]
+   playercount             [count]              [byte]               10
+   new player              [seat][name]         [byte][*char]        11
+   assign seat             [seat]               [byte]               12
+   player eliminated       [seat]               [byte]               13
+   player left             [seat]               [byte]               14
+   set starting money      [amount]             [short]              15
+   playerReady             [seat]               [byte]               18
+   askIfReady              -                                         19
+   set blinds              [small][big]         [short][short]       20
+   is dealer               [seat]               [short]              21
+   is small blind          [seat]               [short]              22
+   is big blind            [seat]               [short]              23
+   deal hole cards         [card][card]         [byte][byte]         30
+   reveal flop             [card][card][card]   [byte][byte][byte]   31
+   reveal turn             [card]               [byte]               32
+   reveal river            [card]               [byte]               33
+   request action          -                                         40
+   player folded           [seat]               [byte]               41
+   player raised           [seat][amount]       [byte][short]        42
+   player called           [seat]               [byte]               43
+   player checked          [seat]               [byte]               44
+   player allin            [seat][amount]       [byte][short]        45
+   reveal holecards        [seat][card][card]   [byte][byte][byte]   50
+   tie                     -                                         51
+   player won              [seat][amount]       [byte][short]        52
+   action is fine          -                                          0
+   error unknown action    -                                          1
+   error illegal action    -                                          2
+   error bet too low       -                                          3

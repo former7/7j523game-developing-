@@ -1,0 +1,3 @@
+/home/scn/gitlib/7j523/server/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/scn/gitlib/7j523/server/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/scn/gitlib/7j523/server/cmake-build-debug/CMakeFiles/server.dir

@@ -14,7 +14,6 @@ public:
    int getLeftCardNum(){return cardsLeft;}
 private:
    int8_t cards[52];
-
    int cardsLeft;
 
 };
